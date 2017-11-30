@@ -7,7 +7,7 @@ controladdin PresentsCtrl{
      RequestedWidth = 300;
      MinimumHeight = 200;
      MinimumWidth = 200;
-     HorizontalStretch = true;
+     //HorizontalStretch = true;
 
     event ControlReady();
     event PresentClicked(presentNo:Integer );
