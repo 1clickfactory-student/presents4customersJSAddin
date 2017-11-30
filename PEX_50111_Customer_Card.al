@@ -12,7 +12,7 @@ pageextension 50111 CustomerCardtExt extends "Customer Card"
             trigger ControlReady();               
             begin
                 ctrReady:=true;
-              //  ShowPresents();
+                ShowPresents();
             end;
 
             trigger PresentClicked(presentNo : Integer);               
@@ -29,11 +29,11 @@ local procedure ShowPresents();
 var
     noOfpresents: Integer ;
 begin
-    //if (ctrReady) then begin
+    if (ctrReady) then begin
         CalcFields("Sales (LCY)");
         noOfpresents:=   "Sales (LCY)" div 10000;
         CurrPage.PresentsCtrl.SetPresents(noOfpresents);
-    //end;
+    end;
 end;
 
 trigger OnAfterGetCurrRecord();
