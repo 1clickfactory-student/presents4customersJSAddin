@@ -1,0 +1,23 @@
+{
+  "id": "f3544baa-545e-4c4b-91a6-2e0d1648ec1c",
+  "name": "JsAddinExample Presents",
+  "publisher": "1ClickFactory Workshop",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "img/present.jpg",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
