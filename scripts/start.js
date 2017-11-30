@@ -1,8 +1,5 @@
 $('#controlAddIn').append('<div id="presents"></div>')
 
-window.OnPresentsClick = function(presentNo){    
-    Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("PresentClicked", [presentNo]);
-}
 
 window.SetPresents= function(noOfPresents){
     $('#presents').empty();

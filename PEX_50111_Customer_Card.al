@@ -15,11 +15,7 @@ pageextension 50111 CustomerCardtExt extends "Customer Card"
               //  ShowPresents();
             end;
 
-            trigger PresentClicked(presentNo : Integer);               
-            begin
-                "Address 2":= StrSubstNo('ship present %1', presentNo);              
-            end;             
-             
+            
          }
      }
    }
