@@ -10,7 +10,5 @@ controladdin PresentsCtrl{
      HorizontalStretch = true;
 
     event ControlReady();
-    event PresentClicked(presentNo:Integer );
-    procedure SetPresents(noOfPresents: Integer);
-
+    
 }
