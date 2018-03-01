@@ -9,36 +9,11 @@ pageextension 50111 CustomerCardtExt extends "Customer Card"
      addfirst(Content){
          usercontrol(PresentsCtrl; PresentsCtrl){
             ApplicationArea= All;
-            trigger ControlReady();               
-            begin
-                ctrReady:=true;
-              //  ShowPresents();
-            end;
-
-            trigger PresentClicked(presentNo : Integer);               
-            begin
-                "Address 2":= StrSubstNo('ship present %1', presentNo);              
-            end;             
-             
+            
          }
      }
    }
-   var ctrReady: Boolean;
-                    
-local procedure ShowPresents();
-var
-    noOfpresents: Integer ;
-begin
-    //if (ctrReady) then begin
-        CalcFields("Sales (LCY)");
-        noOfpresents:=   "Sales (LCY)" div 10000;
-        CurrPage.PresentsCtrl.SetPresents(noOfpresents);
-    //end;
-end;
 
-trigger OnAfterGetCurrRecord();
-begin
-    ShowPresents();
-end;    
+                    
     
 }
